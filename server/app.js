@@ -11,7 +11,13 @@ const PORT = process.env.PORT
 app.use(express.json());
 //mongoose import
 require('./db/conn')
-
+const cors = require('cors');
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 app.use(require('./router/auth'));
 
 // middleware function...

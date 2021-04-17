@@ -1,6 +1,7 @@
 import React from 'react'
 import signupic from '../img/login.svg'
 import { NavLink } from 'react-bootstrap'
+import  axios from 'axios';
 
 function Login() {
     return (
@@ -34,7 +35,7 @@ function Login() {
                            
                             <div className="form-group from-button">
                                <input type="submit" name="signin" id="signin" className="form-submit" 
-                               value="Log In" >
+                               value="Log In" onClick={userSignin}>
                                </input>
 
                            </div>
@@ -61,6 +62,27 @@ function Login() {
 
         </>
     )
+}
+
+function userSignin(e){
+    e.preventDefault();
+    console.log('jhuhhb')
+    // --|e|.|preventDefault();
+    let data = {
+  
+        email:document.getElementById('email').value,
+
+        password:'pswd',
+        cpassword:'pswd'
+    }
+console.log(data)
+    axios.post('http://localhost:3005/signin',data)
+    .then(res=>[
+        alert('User signin successful')
+    ])
+    .catch(err=>{
+        alert('some error')
+    })
 }
 
 export default Login

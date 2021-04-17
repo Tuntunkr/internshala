@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-bootstrap'
 import signupic from '../img/signup.svg'
+import  axios from 'axios';
 function Register() {
     return (
         <>
@@ -49,7 +50,7 @@ function Register() {
                             </div>
                            <div className="form-group from-button">
                                <input type="submit" name="register" id="register" className="form-submit" 
-                               value="register" >
+                               value="register" onClick={userSignup}>
                                </input>
 
                            </div>
@@ -83,4 +84,25 @@ function Register() {
     )
 }
 
+function userSignup(e){
+    e.preventDefault();
+    console.log('jhuhhb')
+    // --|e|.|preventDefault();
+    let data = {
+        name:document.getElementById('name').value,
+        email:document.getElementById('email').value,
+        phone:document.getElementById('phone').value,
+        work:document.getElementById('work').value,
+        password:'pswd',
+        cpassword:'pswd'
+    }
+console.log(data)
+    axios.post('http://localhost:3005/register',data)
+    .then(res=>[
+        alert('User register successful')
+    ])
+    .catch(err=>{
+        alert('some error')
+    })
+}
 export default Register
