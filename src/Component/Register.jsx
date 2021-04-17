@@ -1,7 +1,8 @@
 import React from 'react'
+import { Redirect } from 'react-router'
 import { NavLink } from 'react-bootstrap'
 import signupic from '../img/signup.svg'
-import  axios from 'axios';
+import  axios  from 'axios';
 function Register() {
     return (
         <>
@@ -97,10 +98,11 @@ function userSignup(e){
         cpassword:'pswd'
     }
 console.log(data)
-    axios.post('http://localhost:3005/register',data)
-    .then(res=>[
+    axios.post('http://localhost:3006/register',data)
+    .then(res=>{
         alert('User register successful')
-    ])
+        return <Redirect to='/Login'/>;
+    })
     .catch(err=>{
         alert('some error')
     })

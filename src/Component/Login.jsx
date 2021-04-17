@@ -76,7 +76,7 @@ function userSignin(e){
         cpassword:'pswd'
     }
 console.log(data)
-    axios.post('http://localhost:3005/signin',data)
+    axios.post('http://localhost:3006/signin',data)
     .then(res=>[
         alert('User signin successful')
     ])

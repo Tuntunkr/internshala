@@ -1,5 +1,6 @@
 import React from 'react'
 import { Jumbotron ,Carousel} from 'react-bootstrap'
+import Flexbox from './Flexbox'
 import Search from './Search'
 
 function Internships() {
@@ -62,7 +63,7 @@ View all internships
 Popular cities
 </h2>
 
-
+<Flexbox />
 
 
 
