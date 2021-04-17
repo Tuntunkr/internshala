@@ -71,7 +71,7 @@ router.post("/signin",async(req,res)=>{
       const {email, password} = req.body;
 
       if(!email || !password){
-         return res.status(400).json({error:"invalid details"}); 
+         return res.status(400).json({error:"invalid detail"}); 
       }
 
          const userLogin = await User.findOne({email:email});
