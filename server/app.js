@@ -34,7 +34,7 @@ app.get('/',(req,res)=>{
 });
 app.get('/about',middleware,(req,res)=>{
     console.log("hello about")
-    res.send("hello , I am About page ")
+    res.send("hello , I am About page")
     
 });
 app.get('/contact',(req,res)=>{
