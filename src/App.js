@@ -6,7 +6,7 @@ import Login from './Component/Login';
 import Navbar from './Component/Navbar';
 import OnlineTrainings from './Component/OnlineTrainings';
 import Register from './Component/Register';
-import Search from './Component/Search'
+
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
    <Navbar/>
     <Switch>
     <Route exact  path = "/" component ={Internships}/>
-    <Route exact path="/Online Trainings" component ={OnlineTrainings} />
-    <Route exact path="/Fresher Jobs" component ={FresherJobs} />
+    <Route exact path="/OnlineTrainings" component ={OnlineTrainings} />
+    <Route exact path="/FresherJobs" component ={FresherJobs} />
     <Route exact path = "/Login" component={Login} />
     <Route exact path="/Register" component ={Register} />
     

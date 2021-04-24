@@ -19,10 +19,10 @@ function Navbar () {
         <a class="nav-link" href="/">Internships <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Online Trainings">Online Trainings</a>
+        <a class="nav-link" href="/OnlineTrainings">Online Trainings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Fresher Jobs">Fresher Jobs</a>
+        <a class="nav-link" href="/FresherJobs">Fresher Jobs</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/Login">Login</a>

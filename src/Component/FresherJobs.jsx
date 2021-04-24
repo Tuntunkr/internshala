@@ -1,11 +1,12 @@
 import React from 'react'
 
 function FresherJobs() {
-    return (
-        <div>
-             <h1>Welcome To Fresher Jobs Page </h1>
-        </div>
-    )
+  return (
+    <div>
+      
+     hello
+    </div>
+  )
 }
 
 export default FresherJobs
