@@ -1,21 +1,21 @@
 import React from 'react'
-// import './App.css';
-// import Work from "./images/work_from_home.svg";
-// import Delhi from "./images/delhi_ncr.svg";
-// import Bangalore from "./images/bangalore.svg";
-// import Mumbai from "./images/mumbai.svg";
-// import Hyderabad from "./images/hyderabad.svg";
-// import Chennai from "./images/chennai.svg";
-// import Kolkata from "./images/kolkata.svg";
-// import International from "./images/international.svg";
-// import Parttime from "./images/part_time.svg";
-// import Engineering from "./images/engineering.svg";
-// import Ngo from "./images/ngo.svg";
-// import Mba from "./images/mba.svg";
-// import Design from "./images/design.svg";
-// import Science from "./images/science.svg";
-// import Media from "./images/media.svg";
-// import Humanities from "./images/humanities.svg";
+// import './index.css';
+import Work from "./city/work_from_home.svg";
+import Delhi from "./city/delhi_ncr.svg";
+import Bangalore from "./city/bangalore.svg";
+import Mumbai from "./city/mumbai.svg";
+import Hyderabad from "./city/hyderabad.svg";
+import Chennai from "./city/chennai.svg";
+import Kolkata from "./city/kolkata.svg";
+import International from "./city/international.svg";
+import Parttime from "./city/part_time.svg";
+import Engineering from "./city/engineering.svg";
+import Ngo from "./city/ngo.svg";
+import Mba from "./city/mba.svg";
+import Design from "./city/design.svg";
+import Science from "./city/science.svg";
+import Media from "./city/media.svg";
+import Humanities from "./city/humanities.svg";
 
 
 const flexbox = () => {
@@ -126,7 +126,7 @@ const flexbox = () => {
             <div class="text">Humanities</div>
             </a>
         </div>
-      <h1>hello</h1>
+      
     </div>
 
   );
