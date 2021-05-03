@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* @extend display-flex; */
+@extend display-flex;
 display-flex,
 .display-flex,
 .display-flex-center,
@@ -1018,6 +1018,7 @@ label.valid:after {
   border-radius: 5px;
   font-family: source-code-pro,Menlo, Monaco, Consolas,"Courier New";
 }
+
 /* // city css.. */
 
 h4 {
@@ -1029,7 +1030,8 @@ h4 {
 .scrollable_cards {
   display: flex;
   justify-content: space-around;
-  
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .scrollable_cards .text {
@@ -1149,4 +1151,44 @@ h4 {
   justify-content: center;
   border-radius: 5px;
   background-color:blanchedalmond;
+}
+
+.container1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 9rem;
+}
+.scrollable_card {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+
+.main-footer{
+padding-top: 3em;
+position: relative;
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+.hieght{
+  height: 400px;
+  width: 1450px;
+}
+
+.container1 .scrollable_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.container1 .scrollable_card .text{
+  color: black;
+}
+
+.abc{
+  display: flex;
 }

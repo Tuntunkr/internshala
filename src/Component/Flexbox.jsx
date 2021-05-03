@@ -18,10 +18,13 @@ import Media from "./city/media.svg";
 import Humanities from "./city/humanities.svg";
 
 
+
+
 const flexbox = () => {
   return (
     <div class="container">
-        <h4>Popular cities</h4>
+        
+       
         <div class="scrollable_cards">
             <a class="wfm" href="">
             <div class="img">
@@ -117,7 +120,7 @@ const flexbox = () => {
             <div class="img">
                 <img src={Media} alt="Media" />
             </div>
-            <div class="text">Media</div>
+            <div class="text"></div>
             </a>
             <a class="humanities" href="">
             <div class="img">
@@ -127,7 +130,8 @@ const flexbox = () => {
             </a>
         </div>
       
-    </div>
+       </div>
+    
 
   );
 }

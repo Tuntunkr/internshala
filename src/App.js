@@ -8,7 +8,11 @@ import OnlineTrainings from './Component/OnlineTrainings';
 import Register from './Component/Register';
 
 
+
 function App() {
+
+
+ 
   return (
    <>
    <Navbar/>
@@ -17,13 +21,15 @@ function App() {
     <Route exact path="/OnlineTrainings" component ={OnlineTrainings} />
     <Route exact path="/FresherJobs" component ={FresherJobs} />
     <Route exact path = "/Login" component={Login} />
-    <Route exact path="/Register" component ={Register} />
+    <Route exact path="/Register" component ={Register} /> 
+
     
 
     </Switch>
     
+
+    </>
   
-   </>
   );
 }
 
